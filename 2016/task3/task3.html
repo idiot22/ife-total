@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+<body>
+    <div class="wraper">
+        <div class="container">
+            <div class="center col"></div>
+            <div class="left col">
+                <div class="logo">
+                    <img src="./pic.jpg" alt="" srcset="">
+                    <div >甲方的地方</div>
+                </div>
+            </div>
+            <div class="right col"></div>
+        </div>
+    </div>
+</body>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .wraper{
+        padding: 20px;
+        background: #eee;
+        border: 1px solid #999;
+        margin: 50px;
+    }
+    .container{
+        padding-left: 220px;
+        padding-right: 140px;
+        overflow: auto;
+        min-width: 600px;
+    }
+
+    .left{
+        position: relative;
+        width: 220px;
+        background: darkcyan;
+        margin-left: -100%;
+        left: -220px;
+    }
+    .right{
+        width: 140px;
+        background: darkgoldenrod;
+        margin-right: -140px;
+    }
+    .center{
+        width: 100%;
+        background: darkseagreen;
+    }
+    .col{
+        float: left;
+        height: 500px;
+    }
+</style>
+</html>
