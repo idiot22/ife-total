@@ -1,0 +1,218 @@
+/*
+1.header:display:flex作用后，vertical-align失效，可用align-item替换
+2.font-variant
+3.  text-transform: capitalize;
+  text-decoration: underline;
+4.继承属性
+5.清除浮动
+*/
+html{
+  height: 100%;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: "黑体";
+  background: #ccc;
+  height: 100%;
+}
+.container{
+  background: white;
+  width: 980px;
+  height: 100%;
+  margin: auto;
+  padding: 0px 44px;
+  box-sizing: border-box;
+}
+p,h3{
+  margin: 0px;
+}
+ul{
+  list-style: none;
+  padding: 0px;
+}
+/*header*/
+header{
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  border-bottom: 2px solid #938e8c;
+  font-size: 12px;
+  box-sizing: border-box;
+  align-items: flex-end;
+}
+header .left{
+  background: #d45d5c;
+  color: white;
+  padding: 0px 10px;
+  display: flex;
+  align-items: flex-end;
+  height: 60px;
+  padding-bottom: 5px;
+}
+header .right{
+  padding-bottom: 5px;
+}
+
+/*第一个news*/
+.new1-wraper{
+  margin-top: 44px;
+}
+.img-wraper{
+  float: left;
+  width: 640px;
+  height: 300px;
+  position: relative;
+}
+.img-wraper img{
+  height: 100%;
+  width: 100%;
+}
+.img-wraper .left-mask{
+  width: 190px;
+  height: 300px;
+  position: absolute;
+  left: 0px;
+  z-index: 2;
+  background: green;
+  opacity: 0.20;
+}
+.img-wraper .right-mask{
+  width: 190px;
+  height: 300px;
+  position: absolute;
+  right: 0px;
+  background: red;
+  opacity: 0.20;
+}
+.text-wraper{
+  float: left;
+  width: 200px;
+  height: 300px;
+  border-top: 2px #cc8091 solid;
+  margin-left: 50px;
+}
+.text-wraper  p:nth-child(1),p:nth-child(2){
+  font-variant: small-caps;
+  font-family: '微软雅黑';
+  font-size: 24px;
+  text-transform: capitalize;
+  text-decoration: underline;
+  height: 40px;
+  line-height: 40px;
+}
+.text-wraper  p:nth-child(3){
+  font-size: 12px;
+  color: #676767;
+  font-family: "楷体";
+  line-height: 10px;
+  font-style: oblique;
+}
+.text-wraper  p:nth-child(4){
+  font-size: 116px;
+  color: #75b86b;
+  font-style: oblique;
+}
+.text-wraper  p:nth-child(5){
+  position: relative;
+  font-size: 55px;
+  color: #cc8091;
+  font-family: "微软雅黑";
+}
+.text-wraper  p:nth-child(5) span{
+  font-size: 30px;
+  color: #cc8091;
+  font-family: "微软雅黑";
+  position: absolute;
+  left: 90px;
+  top: 15px;
+}
+.text-wraper #info{
+  position: absolute;
+  font-size: 12px;
+  color: #ccc;
+  font-family: "微软雅黑";
+  top: 45px;
+}
+.img-info-wraper:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.news-info{
+  margin: 40px 0px;
+
+}
+.news-info div{
+  margin-right: 20px;
+}
+.what{
+  width: 230px;
+  float: left;
+}
+.what h3{
+  text-decoration: underline;
+  color: #418c59;
+  font-size: 16px;
+  font-weight: bold;
+  height: 28px;
+  font-family: '微软雅黑';
+}
+.what p{
+  font-size: 12px;
+  color: #767777;
+  line-height: 16px;
+  font-family: "宋体";
+}
+.when{
+  width: 210px;
+  float: left;
+  height: 28px;
+}
+.when h3{
+  text-decoration: underline;
+  color: #d2994f;
+  font-size: 16px;
+  font-weight: bold;
+  height: 28px;
+  font-family: '微软雅黑';
+}
+.when p{
+  font-size: 12px;
+  color: #767777;
+  line-height: 16px;
+  font-family: "宋体";
+}
+.how{
+  width: 140px;
+  float: left;
+  height: 200px;
+  position: relative;
+}
+.how h3{
+  text-decoration: underline;
+  color: #cc7680;
+  font-size: 16px;
+  font-weight: bold;
+  height: 28px;
+  font-family: '微软雅黑';
+}
+.how p{
+  font-size: 12px;
+  color: #767777;
+  line-height: 16px;
+  font-family: "宋体";
+}
+.how ul{
+  font-size: 12px;
+  position: absolute;
+  bottom: 0px;
+  font-family: "微软雅黑";
+}
+.how ul span{
+  color: #cc7680;
+  font-style: oblique;
+  font-family: "微软雅黑";
+}
+
+/*new2*/

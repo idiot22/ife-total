@@ -8,14 +8,41 @@
 <body>
     <div class="wraper">
         <div class="container">
-            <div class="center col"></div>
+            <div class="center col">
+                <div class="info">
+                    <h2>红鲤鱼与绿鲤鱼与驴队</h2>
+                    <h3>团队介绍</h3>
+                    <p>我们是来自黑龙江大学计算机科学计算学院软件学院大二，大一的同学，
+                        身为学长的我带领着四个学妹 参加了这次百度前端技术学院。我自己的方向
+                        是后台的JavaEE，但是想通过参加这次技术培训， 多学习些前端的知识(顺便
+                        还能带带学妹们╭(●｀∀´●)╯)，其他队友都是刚开始学习前端，正好可以 通过
+                        这次0基础地学习，系统地学习前端知识~~</p>
+                    <h3>队员介绍</h3>
+                    <p>巴拉巴拉</p>
+                </div>
+            </div>
             <div class="left col">
                 <div class="logo">
                     <img src="./pic.jpg" alt="" srcset="">
                     <div >甲方的地方</div>
                 </div>
             </div>
-            <div class="right col"></div>
+            <div class="right col">
+                <div class="group">
+                    <div class="member">
+                        <img src="./pic.jpg" alt="" srcset="">
+                    </div>
+                    <div class="member">
+                        <img src="./pic.jpg" alt="" srcset="">
+                    </div>
+                    <div class="member">
+                        <img src="./pic.jpg" alt="" srcset="">
+                    </div>
+                    <div class="member">
+                        <img src="./pic.jpg" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
@@ -29,29 +56,68 @@
         background: #eee;
         border: 1px solid #999;
         margin: 50px;
+        min-width: 600px;
     }
     .container{
         padding-left: 220px;
         padding-right: 140px;
         overflow: auto;
-        min-width: 600px;
     }
 
     .left{
         position: relative;
         width: 220px;
-        background: darkcyan;
         margin-left: -100%;
         left: -220px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+    .left .logo{
+        padding: 20px;
+        background: white;
+        display: flex;
+        padding-right: 10px;
+        border: 1px solid #999;
+    }
+    .left .logo img{
+        width: 80px;
+        height: 80px;        
     }
     .right{
         width: 140px;
-        background: darkgoldenrod;
         margin-right: -140px;
+        padding-left: 10px;
+        box-sizing:border-box ;
+    }
+    .right .group{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+        background: white;
+        border: 1px solid #999;
+    }
+    .right .group .member{
+        border: 1px solid #999;
+        height: 80px;
+        width: 80px;
+        margin-bottom: 20px;
+    }
+    .right .group .member img{
+        width: 100%;
+        height: 100%;
     }
     .center{
         width: 100%;
-        background: darkseagreen;
+        padding: 0px 10px;
+        box-sizing: border-box;
+    }
+    .center .info{
+        border: 1px solid #999;
+        background: white;
+        padding: 20px;
+    }
+    .center .info p{
+        text-indent: 2rem;
     }
     .col{
         float: left;

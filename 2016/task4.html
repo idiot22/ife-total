@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+</head>
+<body>
+    <div class="wraper">
+        <div class="round1"></div>
+        <div class="round2"></div>
+    </div>
+</body>
+<style>
+    .wraper{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+        height: 200px;
+        background: palevioletred;
+        overflow: hidden;
+        top: 50%;
+    }
+    .round1{
+        width: 50px;
+        height: 50px;
+        background: royalblue;
+        border-radius: 50px;
+        position: relative;
+        top:-25px;
+        left: -25px;
+    }
+    .round2{
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        background: royalblue;
+        border-radius: 50px;
+        position: absolute;
+        bottom:-25px;
+        right: -25px;
+    }
+</style>
+</html>
